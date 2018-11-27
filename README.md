@@ -3,11 +3,11 @@ Efficient implementation of the MAD method for inferring the location of the roo
 
 The MAD  method for rooting a phylogeny was first described in 
 
-Tria, F. D. K., Landan, G., and Dagan, T. (2017). Phylogenetic rooting using minimal ancestor deviation. Nature Ecology and Evolution, 1, 0193.
+Tria, F. D. K., Landan, G., and Dagan, T. (2017). Phylogenetic rooting using minimal ancestor deviation. _Nature Ecology and Evolution_, 1, 0193.
    
 This is an implementation of the O(n^2) time and linear space algorithm outlined in 
 
-Bryant, David, and Michael Charleston. "MAD roots for large trees." arXiv preprint arXiv:1811.03174 (2018).
+Bryant, David, and Michael Charleston. "MAD roots for large trees." _arXiv preprint arXiv:1811.03174_ (2018).
 
 ---
 ## Contents
