@@ -1,0 +1,3 @@
+[submodule "Phylib"]
+	path = Phylib
+	url = git@github.com:davidjamesbryant/Phylib.git
