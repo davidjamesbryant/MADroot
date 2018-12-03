@@ -9,7 +9,7 @@
 #include <unistd.h>
 #include <ctime>
 #include <list>
-#include "PhyLib/phylib.h"
+#include "Phylib/phylib.h"
 
 using namespace Phylib;
 
