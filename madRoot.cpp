@@ -444,6 +444,15 @@ void runSimulation(ostream& os) {
 }
 
 
+bool isTreeTrivial(phylo<basic_newick>& tree) {
+    if (tree.root().null())
+        return true;
+    int leafCount = 0;
+    for(phylo<basic_newick>::iterator p = tree.root();!p.null();p=p.next_pre())
+        if (p.left().null())
+            leafCount++;
+    return (leafCount<=1);
+}
 
 
 int main(int argc, char* argv[]) {
@@ -473,7 +482,7 @@ int main(int argc, char* argv[]) {
         } catch(...) {
             done = true;
         }
-         if (taxa.empty()) {
+         if (taxa.empty()||isTreeTrivial(newickTree)) {
              done = true;
          }
         else {
