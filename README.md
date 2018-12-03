@@ -12,25 +12,27 @@ Bryant, David, and Michael Charleston. "MAD roots for large trees." _arXiv prepr
 ---
 ## Contents
 
-*   `madRoot.cpp`  Code for the MAD root procedure, and for the simulations performed in the paper.
-*   `Makefile'     Make file.
-*   `smallExample.txt`  Small (four taxa) example
-*    `largeExample.txt` Large (3082 taxa) example
+*   'madRoot.cpp'  Code for the MAD root procedure, and for the simulations performed in the paper.
+*   'Makefile'     Make file.
+*   'smallExample.txt'  Small (four taxa) example
+*    'largeExample.txt' Large (3082 taxa) example
 Note that this code makes use of the PhyLib library (here included as a submodule).
 
+---
+## Downloading
 
+In a terminal window, execute
+    git clone --recursive git@github.com:davidjamesbryant/MADroot.git
+    
 ---
 ## Building
 
-Make sure that `madRoot.cpp`, `Makefile`and the `PhyLib` directory are in the same folder, then type `make`.
+Change to the directory 'MADroot'. Make sure that 'madRoot.cpp', 'Makefile' and the 'Phylib' directory are in the same folder, then type 'make'.
 
 To run the algorithm on the tree in the tree file <filename> call
-``
-madRoot <treefile>
-``
+    madRoot <treefile>
+
 To repeat the simulation/benchmark performed in Bryant and Charleston, run
-``
-madRoot -SIM
-``
+    madRoot -SIM
 
 
