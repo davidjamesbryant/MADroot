@@ -40,5 +40,5 @@ To repeat the simulation/benchmark performed in Bryant and Charleston, run
 ### madRoot (inline) R.
 
 in R, make MADroot your working directory. Install the packages 'Rcpp' and 'inline'. When you execute 'madRoot'R' it will create a new function in R called 'madRoot'. You can run 'madRoot' using
-    madRoot(~treeString~)
-where ~treeString~ is a string containing one or more trees in NEWICK notation, separated by semicolons.  
+    madRoot(_treeString_)
+where _treeString_ is a string (character vector) containing one or more trees in NEWICK notation, separated by semicolons.  
