@@ -13,6 +13,7 @@ Bryant, David, and Michael Charleston. "MAD roots for large trees." _arXiv prepr
 ## Contents
 
 *   'madRoot.cpp'  Code for the MAD root procedure, and for the simulations performed in the paper.
+*   'madRoot.R'  An R script giving an (inline) version of the madRoot algorithm
 *   'Makefile'     Make file.
 *   'smallExample.txt'  Small (four taxa) example
 *    'largeExample.txt' Large (3082 taxa) example
@@ -27,6 +28,7 @@ In a terminal window, execute
 ---
 ## Building
 
+### madRoot executable
 Change to the directory 'MADroot'. Make sure that 'madRoot.cpp', 'Makefile' and the 'Phylib' directory are in the same folder, then type 'make'.
 
 To run the algorithm on the tree in the tree file <filename> call
@@ -35,4 +37,8 @@ To run the algorithm on the tree in the tree file <filename> call
 To repeat the simulation/benchmark performed in Bryant and Charleston, run
     madRoot -SIM
 
+### madRoot (inline) R.
 
+in R, make MADroot your working directory. Install the packages 'Rcpp' and 'inline'. When you execute 'madRoot'R' it will create a new function in R called 'madRoot'. You can run 'madRoot' using
+    madRoot(~treeString~)
+where ~treeString~ is a string containing one or more trees in NEWICK notation, separated by semicolons.  
